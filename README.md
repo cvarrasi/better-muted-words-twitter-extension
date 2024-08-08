@@ -23,7 +23,7 @@ Follow for updates and new features.
 
 ## FAQs
 ### Is this free?
-Yes it's free.
+Yes, it's free.
 
 ### Is any of my data collected/stored?
 No, this extension does not collect or send any data, it simply runs locally in your browser.
