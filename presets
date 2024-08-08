@@ -1,5 +1,5 @@
 {
-  [
+  "presets": [
     ['🚫 Spam & Unwanted', 'spam', 'junk', 'irrelevant', 'ad', 'promotion', 'offensive', 'scam', 'fake', 'unwanted', 'clickbait'],
     ['🗳️ Politics', 'politics', 'election', 'candidate', 'vote', 'campaign', 'policy', 'government', 'debate', 'republican', 'democrat'],
     ['🏀 Sports', 'sports', 'soccer', 'basketball', 'tennis', 'football', 'baseball', 'hockey', 'golf', 'cricket', 'olympics'],
