@@ -17,10 +17,6 @@ Todo
 ### 4. Mute words directly from a tweet in your feeds
 Todo
 
-## Suggestions, Ideas, Bugs, Typos?
-Tweet/DM to <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
-Follow for updates and new features.
-
 ## FAQs
 ### Is this free?
 Yes, it's free.
@@ -32,6 +28,8 @@ No, this extension does not collect or send any data, it simply runs locally in 
 <b>NO OPINION ON WARS, POLITICS, SOCIAL ISSUES IS EXPRESSED</b> by the presence of packs or of any of the keywords inside those packs.
 The words found in the packs are simply terms that help identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
-### Can I help with this?
-Send me suggestions for new packs/features here: <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
+## I have suggestions, ideas, bugs, typos
+Tweet/DM to <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
+<br> Send me suggestions for new packs/features!
+<br>Follow for updates and new features.
 <br>Also rate this app in the Chrome web store and send to your friends and followers!
