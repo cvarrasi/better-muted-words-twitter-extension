@@ -28,7 +28,7 @@ Yes it's free.
 ### Is any of my data collected/stored?
 No, this extension does not collect or send any data, it simply runs locally in your browser.
 
-### So you suggest to mute <topic>, does this mean you are in favor/against <topic>?
+### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
 No, the words are simply to mute topics you might not want to see in your relaxing social media time. <br>
 <b>No opinion on wars, social issues, politics, etc</b> is expressed by the presence of any of the keywords in the packs.
 
