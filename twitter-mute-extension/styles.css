@@ -1,0 +1,295 @@
+.twitter-multi-mute-container {
+    background-color: #15202b;
+    border: 1px solid #38444d;
+    border-radius: 0;
+    padding: 16px;
+    margin: 0; /* This will remove any margin */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* If the above doesn't work, you can try to force it with !important */
+.twitter-multi-mute-container {
+    margin: 0 !important;
+}
+
+/* To ensure no bottom margin specifically */
+.twitter-multi-mute-container {
+    margin-bottom: 0 !important;
+}
+
+/* If there's still an issue, you might need to target the parent element */
+#twitter-multi-mute {
+    margin-bottom: 0 !important;
+}
+
+div[data-testid="primaryColumn"] > div > div:last-child {
+    margin-bottom: 0 !important;
+}
+
+#twitter-multi-mute {
+    margin-bottom: 16px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+#twitter-multi-mute h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.textarea-container {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+#twitter-multi-mute textarea {
+    width: 100%;
+    min-height: 80px; /* Changed from height to min-height */
+    max-height: 300px; /* Add a maximum height to prevent excessive growth */
+    background-color: #253341;
+    border: 1px solid #38444d;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 8px;
+    padding-right: 48px;
+    font-size: 14px;
+    box-sizing: border-box;
+    resize: vertical;
+    overflow-y: auto; /* Allow scrolling if content exceeds max-height */
+    transition: height 0.2s ease; /* Smooth transition for height changes */
+}
+
+.clear-button {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background-color: #e0245e; /* Darker red background */
+    color: #ffffff; /* White text */
+    border: none;
+    font-size: 10px;
+    font-weight: bold; /* Added to improve legibility */
+    cursor: pointer;
+    padding: 3px 5px 4px; /* Increased bottom padding */
+    border-radius: 8px;
+    line-height: 1;
+}
+
+.clear-button:hover {
+    background-color: #c01c4e; /* Slightly darker red on hover */
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 8px 0;
+    margin-bottom: 12px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.small-preset-button {
+    background-color: #4a4f57; /* Darker background color */
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    margin: 0 3px;
+    white-space: nowrap;
+    display: inline-block;
+    flex: 0 0 auto;
+    min-height: 32px;
+    line-height: 1.2;
+    transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.small-preset-button:hover {
+    background-color: #5a5f68; /* Slightly lighter on hover for better feedback */
+}
+
+#twitter-multi-mute #findConnectedWordsButton {
+    background-color: #3d5a80;
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 6px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+    display: inline-block;
+    min-height: 32px;
+    line-height: 1.2;
+}
+
+.mute-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+}
+
+#twitter-multi-mute #muteButton {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    border-radius: 9999px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#twitter-multi-mute #status {
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    min-height: 0;
+    overflow: hidden;
+    transition: min-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+#twitter-multi-mute #status:empty {
+    padding: 0;
+    margin-top: 0;
+}
+
+#twitter-multi-mute #status.success {
+    background-color: #17bf63;
+    color: #ffffff;
+    min-height: 20px;
+}
+
+#twitter-multi-mute #status.error {
+    background-color: #e0245e;
+    color: #ffffff;
+    min-height: 20px;
+}
+
+#twitter-multi-mute #status.info {
+    background-color: #1da1f2;
+    color: #ffffff;
+    min-height: 20px;
+}
+
+#statusContainer {
+    margin-top: 12px;
+    display: none; /* Hide by default */
+}
+
+.status {
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: none; /* Hide individual status messages by default */
+}
+
+.status.visible {
+    display: block; /* Show only when the 'visible' class is added */
+}
+
+.status.success {
+    background-color: #17bf63;
+    color: #ffffff;
+}
+
+.status.error {
+    background-color: #e0245e;
+    color: #ffffff;
+}
+
+.status.info {
+    background-color: #1da1f2;
+    color: #ffffff;
+}
+
+#findConnectedWordsButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#findConnectedWordsButton:disabled,
+#clearButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.twitter-multi-mute-container.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.twitter-multi-mute-container.disabled * {
+    pointer-events: none;
+}
+
+#loadingIndicator {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: #1da1f2;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.modal-content {
+    background-color: #15202b;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 1.3125;
+}
+
+.spinner {
+    border: 4px solid #2f3336;
+    border-top: 4px solid #1da1f2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#countdownTimer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #8899a6;
+}
