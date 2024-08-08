@@ -34,4 +34,4 @@ The words found in the packs are simply terms that help identify tweets about a 
 
 ### Can I help with this?
 Send me suggestions for new packs/features here: <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
-Also rate this app in the Chrome extension store and send to your friends and followers!
+<br>Also rate this app in the Chrome web store and send to your friends and followers!
