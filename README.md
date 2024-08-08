@@ -30,6 +30,6 @@ The words found in the packs are simply terms that help identify tweets about a 
 
 ## I have suggestions, ideas, bugs, typos
 Tweet/DM to <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
+<br><b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 <br> Send me suggestions for new packs/features!
-<br><b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a> for updates and new features.
 <br>Also rate this app in the Chrome web store and send to your friends and followers!
