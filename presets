@@ -1,5 +1,3 @@
-{
-  "presets": [
     ["🚫 Spam & Unwanted", "spam", "junk", "irrelevant", "ad", "promotion", "offensive", "scam", "fake", "unwanted", "clickbait"],
     ["🗳️ Politics", "politics", "election", "candidate", "vote", "campaign", "policy", "government", "debate", "republican", "democrat"],
     ["🏀 Sports", "sports", "soccer", "basketball", "tennis", "football", "baseball", "hockey", "golf", "cricket", "olympics"],
@@ -10,5 +8,3 @@
     ["🎵 Music", "music", "song", "album", "artist", "band", "concert", "genre", "lyrics", "playlist", "track"],
     ["👗 Fashion", "fashion", "style", "clothes", "designer", "trend", "outfit", "accessories", "wardrobe", "runway", "model"],
     ["🏥 Health", "health", "fitness", "exercise", "diet", "nutrition", "wellness", "workout", "therapy", "clinic", "medicine"]
-  ]
-}
