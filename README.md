@@ -6,12 +6,16 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 ## Features
 
 ### Add multiple muted words in one go
+Todo
 
 ### Generate plurals and variants for your muted words
+Todo
 
 ### Quick-add preset packs of muted words 
+Todo
 
 ### Mute words directly from a tweet in your feeds
+Todo
 
 ## Suggestions, Ideas, Bugs, Typos?
 Tweet/DM to <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
