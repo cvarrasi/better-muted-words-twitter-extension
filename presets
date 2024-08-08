@@ -1,14 +1,14 @@
 {
   "presets": [
-    ['🚫 Spam & Unwanted', 'spam', 'junk', 'irrelevant', 'ad', 'promotion', 'offensive', 'scam', 'fake', 'unwanted', 'clickbait'],
-    ['🗳️ Politics', 'politics', 'election', 'candidate', 'vote', 'campaign', 'policy', 'government', 'debate', 'republican', 'democrat'],
-    ['🏀 Sports', 'sports', 'soccer', 'basketball', 'tennis', 'football', 'baseball', 'hockey', 'golf', 'cricket', 'olympics'],
-    ['🦠 COVID-19', 'covid', 'covid-19', 'covid 19', 'covid19', 'coronavirus', 'corona virus', 'masking', 'mask', 'maskup', 'anti-mask', 'anti mask', 'no mask', 'vaccine', 'vaccination', 'vaccinated', 'novax', 'no-vax', 'no vax', 'antivax', 'anti-vax', 'unvaccinated', 'lockdown', 'pandemic', 'social distancing', 'pfizer', 'moderna', 'mRNA', 'immunity', 'fauci', 'lab leak', 'lab-leak', 'infections', 'invermectin', 'fenbendazole', 'vaxxed', 'vax', 'unvaxxed', 'booster', 'hospitalizations'],
-    ['💻 Technology', 'technology', 'startup', 'innovation', 'gadget', 'app', 'software', 'hardware', 'AI', 'robot', 'blockchain'],
-    ['🍔 Food', 'food', 'recipe', 'cook', 'chef', 'restaurant', 'cuisine', 'dining', 'meal', 'taste', 'flavor'],
-    ['✈️ Travel', 'travel', 'vacation', 'trip', 'destination', 'adventure', 'explore', 'journey', 'tour', 'flight', 'hotel'],
-    ['🎵 Music', 'music', 'song', 'album', 'artist', 'band', 'concert', 'genre', 'lyrics', 'playlist', 'track'],
-    ['👗 Fashion', 'fashion', 'style', 'clothes', 'designer', 'trend', 'outfit', 'accessories', 'wardrobe', 'runway', 'model'],
-    ['🏥 Health', 'health', 'fitness', 'exercise', 'diet', 'nutrition', 'wellness', 'workout', 'therapy', 'clinic', 'medicine']
+    ["🚫 Spam & Unwanted", "spam", "junk", "irrelevant", "ad", "promotion", "offensive", "scam", "fake", "unwanted", "clickbait"],
+    ["🗳️ Politics", "politics", "election", "candidate", "vote", "campaign", "policy", "government", "debate", "republican", "democrat"],
+    ["🏀 Sports", "sports", "soccer", "basketball", "tennis", "football", "baseball", "hockey", "golf", "cricket", "olympics"],
+    ["🦠 COVID-19", "covid", "covid-19", "covid 19", "covid19", "coronavirus", "corona virus", "masking", "mask", "maskup", "anti-mask", "anti mask", "no mask", "vaccine", "vaccination", "vaccinated", "novax", "no-vax", "no vax", "antivax", "anti-vax", "unvaccinated", "lockdown", "pandemic", "social distancing", "pfizer", "moderna", "mRNA", "immunity", "fauci", "lab leak", "lab-leak", "infections", "invermectin", "fenbendazole", "vaxxed", "vax", "unvaxxed", "booster", "hospitalizations"],
+    ["💻 Technology", "technology", "startup", "innovation", "gadget", "app", "software", "hardware", "AI", "robot", "blockchain"],
+    ["🍔 Food", "food", "recipe", "cook", "chef", "restaurant", "cuisine", "dining", "meal", "taste", "flavor"],
+    ["✈️ Travel", "travel", "vacation", "trip", "destination", "adventure", "explore", "journey", "tour", "flight", "hotel"],
+    ["🎵 Music", "music", "song", "album", "artist", "band", "concert", "genre", "lyrics", "playlist", "track"],
+    ["👗 Fashion", "fashion", "style", "clothes", "designer", "trend", "outfit", "accessories", "wardrobe", "runway", "model"],
+    ["🏥 Health", "health", "fitness", "exercise", "diet", "nutrition", "wellness", "workout", "therapy", "clinic", "medicine"]
   ]
 }
