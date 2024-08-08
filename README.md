@@ -6,7 +6,12 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 ## Features
 
 ## Suggestions, Ideas, Bugs, Typos?
-<a href="https://x.com/carlovarrasi">Tweet/DM @carlovarrasi</a>
+Tweet/DM to <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
+Follow for updates and new features.
 
 ## FAQs
-- Is any of my data collected/stored? NO, this extension does not collect any data, it simply runs in your browser.
+### Is this free?
+Yes it's free.
+
+### Is any of my data collected/stored?
+No, this extension does not collect any data, it simply runs in your browser.
