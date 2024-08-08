@@ -29,6 +29,6 @@ No, this extension does not collect or send any data, it simply runs locally in 
 The words found in the packs are simply terms that help identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
 ## I have suggestions, ideas, bugs, typos
-<br><b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
+<b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 <br> Send me suggestions for new packs/features or bugs you found via tweet/DM!
 <br>Also rate this app in the Chrome web store and share it with your friends and followers!
