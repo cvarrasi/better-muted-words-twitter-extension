@@ -5,16 +5,16 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 ## Features
 
-### Add multiple muted words in one go
+### 1. Add multiple muted words in one go
 Todo
 
-### Generate plurals and variants for your muted words
+### 2. Generate plurals and variants for your muted words
 Todo
 
-### Quick-add preset packs of muted words 
+### 3. Quick-add preset packs of muted words 
 Todo
 
-### Mute words directly from a tweet in your feeds
+### 4. Mute words directly from a tweet in your feeds
 Todo
 
 ## Suggestions, Ideas, Bugs, Typos?
@@ -27,3 +27,7 @@ Yes it's free.
 
 ### Is any of my data collected/stored?
 No, this extension does not collect any data, it simply runs in your browser.
+
+### Do the words in preset packs mean anything?
+No, the words are simply to mute topics you might not want to see in your relaxing social media time. <br>
+<b>No position on wars, social issues, politics, etc is taken as part of this extension.</b>
