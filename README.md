@@ -29,7 +29,7 @@ Yes it's free.
 No, this extension does not collect or send any data, it simply runs locally in your browser.
 
 ### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
-<b>No opinion on wars, social issues, politics, etc is expressed</b> by the presence of any of the keywords in the packs.
+<u><b>No opinion on wars, social issues, politics, etc is expressed</b></u> by the presence of any of the keywords in the packs.
 The words added are simply terms deemed useful to identify tweets about a topic you might not want to see in your relaxing social media time.<br>
 
 ### Can I help with this?
