@@ -30,7 +30,7 @@ No, this extension does not collect or send any data, it simply runs locally in 
 
 ### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
 <b>NO OPINION ON WARS, POLITICS, SOCIAL ISSUES IS EXPRESSED</b> by the presence of any of the keywords in the packs.
-The words added are simply terms deemed useful to identify tweets about a topic you might not want to see in your relaxing social media time.<br>
+The words found in the packs are simply terms that help identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
 ### Can I help with this?
 Send me suggestions for new packs/features here: <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
