@@ -30,7 +30,7 @@ No, this extension does not collect or send any data, it simply runs locally in 
 
 ### Do the words in preset packs mean anything?
 No, the words are simply to mute topics you might not want to see in your relaxing social media time. <br>
-<b>No position/opinion on wars, social issues, politics, etc</b> is taken as part of this extension.
+<b>No opinion on wars, social issues, politics, etc</b> is expressed by the presence of any of the keywords in the packs.
 
 ### Can I help with this?
 Send me suggestions for new packs/features here: <a href="https://x.com/carlovarrasi">@carlovarrasi</a>.
