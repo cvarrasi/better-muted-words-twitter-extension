@@ -6,10 +6,10 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
 
-[How to Install in 2 Clicks](#header1)  
-[Features](#header2)
-[FAQs](#header3)
-[Updates, Suggestions, Ideas, Bugs, Typos](#header2)
+[How to Install in 2 Clicks](#header1)<br> 
+[Features](#header2)<br>
+[FAQs](#header3)<br>
+[Updates, Suggestions, Ideas, Bugs, Typos](#header4)<br>
 
 
 <a name="header1"/>
