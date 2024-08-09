@@ -41,10 +41,10 @@ No, this is not affilited with X.com nor it's official. It's simply a personal p
 No, this extension does not collect or send any data, it simply runs locally in your browser. It does not even have analytics, it literally just lives within your Chrome window.
 
 ### You suggest to mute <i>xyz</i>, so you are in favor/against <i>xyz</i>?
-<b>NO VIEW POINT OR OPINION IS EVER EXPRESSED AS PART OF THIS EXTENSION</b> and in no way this extension ever represents the views of the creator or his employers.
+<b>No view point or opinion is ever expressed with this extension</b> and in no way this extension ever represents the views of the creator or his employers.
 <br><br>The words found in the extension packs are simply terms that typically identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
-### Is the extension maintained?
+### Is the extension actively maintained?
 It is currently maintained on a best-effort basis, with no guarantee of full functioning and no thorough test on all edge cases/devices. Sorry!
 
 ### The extension caused some bugs in my X.com timeline
