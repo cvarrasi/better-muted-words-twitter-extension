@@ -1,11 +1,11 @@
 # Better Muted Words - Chrome Extension for Twitter/X.com
 Manage your muted words on Twitter/X.com in a better way. Batch add multiple muted words. Generate plurals and swaps. Find presets that you might want to mute. Mute words from a tweet.
-
+___
 ## How to Install in 2 Clicks
 TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
-
+___
 ## Features
 
 ### 1. Add multiple muted words at once
@@ -19,17 +19,17 @@ ___
 The button in the top right corner 'Add Plurals/Variants' allows you to generate the plurals/variants of the words you have in your textbox, adding them to the list of words to mute.<br><br>This is useful to remove all variations and letter swaps that might be used in posts.
 
 ![image](https://github.com/user-attachments/assets/59e69f43-03b5-43d9-8faa-908a291d8e05)
-
+___
 ### 3. Quick-add preset packs of muted words 
 You can then find a series of preset 'packs' of keywords that you might want to mute if you want to exclude a specific topic from your timeline. You can remove any keyword from the pack or add more before muting the list. <br><br>A 'Search...' tool on the left allows your to search among the packs to quickly find any matching ones.
 
 ![image](https://github.com/user-attachments/assets/93716ebe-5a0d-4ae3-b024-246a9999cfa6)
-
+___
 ### 4. Mute words directly from a tweet in your feeds
 When you see a tweet, you can now click the 3-dot menu on the right and find a new option to 'Mute keywords from this tweet'. This new option will bring you to the muted words settings page and prefill the list of words to be muted with keywords from that tweet. This will make it easy to remove topics you are not interested in right when you see them in your timeline.
 
 ![image](https://github.com/user-attachments/assets/dbd71fe3-0e76-40ce-bd63-255c07ada9f7)
-
+___
 ## FAQs
 ### Is this extension free?
 Yes, it's free.
