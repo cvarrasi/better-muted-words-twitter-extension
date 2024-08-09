@@ -239,20 +239,29 @@ console.log('Twitter Multi-Mute Extension loaded');
         extensionUI.className = 'twitter-multi-mute-container';
         extensionUI.innerHTML = `
         <div class="header-container">
-            <h3>Better Muted Words Extension</h3>
+            <div class="title-container">
+                <h3>Better Muted Words Extension</h3>
+                <a href="https://github.com/cvarrasi/better-muted-words-twitter-extension/blob/main/README.md" target="_blank" class="github-link" title="View README on GitHub">
+                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
             <button id="findConnectedWordsButton" title="Adds plurals, variants, letter swaps of the words you added. The originals will be preserved.">Add Plurals/Variants</button>
         </div>
         <div class="textarea-container">
             <textarea id="wordList" placeholder="Enter words to mute, separated by commas or new lines"></textarea>
             <button id="clearButton" class="clear-button">Clear</button>
         </div>
-    <div class="carousel-container">
-        <div id="carousel" class="preset-buttons-container">
-            <input type="text" id="presetFilter" placeholder="Search...">
-            <!-- Preset buttons will be added here dynamically -->
+        <div class="carousel-container">
+            <div id="carousel" class="preset-buttons-container">
+                <input type="text" id="presetFilter" placeholder="Search...">
+                <!-- Preset buttons will be added here dynamically -->
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
         <div class="mute-button-container">
             <button id="muteButton" title="Adds the muted words you added to the text box above. The button shows the estimated number of seconds that the operation will take">Mute words</button>
         </div>

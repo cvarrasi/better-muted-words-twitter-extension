@@ -62,11 +62,17 @@ div[data-testid="primaryColumn"] > div > div:last-child {
     margin-bottom: 12px;
 }
 
+.title-container {
+    display: flex;
+    align-items: center;
+}
+
 #twitter-multi-mute h3 {
     color: var(--title-color, var(--title-color-light));
     font-size: 18px;
     font-weight: bold;
     margin: 0;
+    margin-right: 8px; /* Add some space between the title and the icon */
 }
 
 .textarea-container {
@@ -373,4 +379,23 @@ div[data-testid="primaryColumn"] > div > div:last-child {
     color: var(--text-color);
     margin-right: 8px;
     flex-shrink: 0;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color, var(--title-color-light));
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.github-link:hover {
+    opacity: 1;
+}
+
+.github-link svg {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle; /* Ensure vertical alignment with text */
 }

@@ -3,23 +3,38 @@
   "name": "Twitter Multi-Mute",
   "version": "1.0",
   "description": "Add multiple muted words to your Twitter account",
-"permissions": [
+  "permissions": [
     "activeTab",
     "storage"
   ],
-   "host_permissions": [
-      "https://api.github.com/*",
-      "https://raw.githubusercontent.com/*",
-      "https://twitter.com/settings/muted_keywords*"
+  "host_permissions": [
+    "https://api.github.com/*",
+    "https://raw.githubusercontent.com/*",
+    "https://twitter.com/settings/muted_keywords*"
   ],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
-      {
-        "matches": [
-          "https://twitter.com/*",
-          "https://x.com/*"
-        ],
-        "js": ["content.js"],
-        "css": ["styles.css"]
-      }
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
   ]
 }
