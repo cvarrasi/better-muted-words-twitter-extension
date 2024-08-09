@@ -7,7 +7,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
 
 ## Table of Contents  
-[How to Install in 2 Clicks](# How to Install in 2 Clicks)  
+[# How to Install in 2 Clicks](#headers)  
 [Emphasis](#emphasis) 
 
 ## How to Install in 2 Clicks
