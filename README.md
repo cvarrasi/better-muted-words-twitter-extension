@@ -45,9 +45,9 @@ No, this extension does not collect or send any data, it simply runs locally in 
 
 ### You suggest to mute <i>xyz</i>, so you are in favor/against <i>xyz</i>?
 > [!IMPORTANT]
-> <b>No view point or opinion is ever expressed with this extension</b> and in no way this extension ever represents the views of the creator or his employers.
+> <b>No view point or opinion is ever expressed with this extension and the keywords contained in packs</b> and no part of this extension ever represents the views of the creator or his employers.
 
-The words found in the extension packs are simply terms that typically identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
+The words found in the extension packs are simply terms that typically identify tweets about a topic. Their presence (or absence) is in no way a judgment, endorsement or rejection. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
 ### Is the extension actively maintained?
 It is currently maintained on a best-effort basis, with no guarantee of full functioning and no thorough test on all edge cases/devices. Sorry!
