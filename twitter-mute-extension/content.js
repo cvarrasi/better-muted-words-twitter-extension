@@ -3,26 +3,6 @@
 
     let presetWords = [];
 
-    // Function to parse the presets file content
-    function parsePresets(rawData) {
-        // Remove any leading/trailing whitespace and the outer square brackets
-        const trimmedData = rawData.trim().replace(/^\[|\];?$/g, '');
-
-        // Split the string into individual preset arrays
-        const presetStrings = trimmedData.split(/\],\s*\[/);
-
-        return presetStrings.map(presetString => {
-            // Remove any remaining square brackets
-            const cleanedPresetString = presetString.replace(/^\[|\]$/g, '');
-
-            // Split the string into individual items
-            return cleanedPresetString.split(/,\s*/).map(item => {
-                // Remove any quotes (single or double) from each item
-                return item.replace(/^['"]|['"]$/g, '').trim();
-            });
-        });
-    }
-
     // Function to fetch presets from GitHub
     async function fetchPresets() {
             presetWords = [
@@ -39,40 +19,6 @@
                 ["🚀 Crypto", "crypto", "bitcoin", "BTC", "bit coin", "eth", "ethereum", "FTX", "meme coin", "blockchain", "defi", "degen", "cryptocurrency", "NFT", "altcoin", "ICO", "dogecoin", "litecoin", "stablecoin", "HODL", "satoshi", "binance", "coinbase", "cardano", "polkadot", "chainlink", "stablecoin", "stablecoins", "airdrop", "gas fees", "smart contract"],
                 ["📊 Finance", "stock market", "stock crash", "market crash", "financial crisis", "recession", "bear market", "bull market", "market volatility", "dow jones", "nasdaq", "s&p 500", "stock prices", "market correction", "economic downturn", "market collapse", "market bubble", "fed", "rate hike", "quantitative easing", "market panic", "sell-off", "financial meltdown", "market turmoil", "stock plunge", "market dip", "economic depression", "economic collapse", "housing bubble", "credit crunch", "banking crisis", "debt crisis", "bond market", "equity market", "forex", "VIX"]
             ];
-
-        // const owner = 'cvarrasi';
-        // const repo = 'better-muted-words-twitter-extension';
-        // const path = 'presets';
-        // const branch = 'main';
-
-        // try {
-        //     // First, get the file information from the GitHub API
-        //     const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`;
-        //     const response = await fetch(apiUrl);
-        //     if (!response.ok) {
-        //         throw new Error(`HTTP error! status: ${response.status}`);
-        //     }
-        //     const data = await response.json();
-
-        //     // Get the raw content URL
-        //     const rawUrl = data.download_url;
-
-        //     // Fetch the raw content
-        //     const rawResponse = await fetch(rawUrl);
-        //     if (!rawResponse.ok) {
-        //         throw new Error(`HTTP error! status: ${rawResponse.status}`);
-        //     }
-        //     const rawData = await rawResponse.text();
-
-        //     // Parse the raw content using our custom parser
-        //     presetWords = parsePresets(rawData);
-        //     console.log('Presets loaded:', presetWords);
-        //     updatePresetButtons(); // Add this line to update buttons after fetching
-        // } catch (error) {
-        //     // Fallback to default presets if fetch fails
-        //     presetWords = [];
-        //     updatePresetButtons(); // Still update buttons even if fetch fails
-        // }
     }
 
     function generateRelatedWords(input) {
