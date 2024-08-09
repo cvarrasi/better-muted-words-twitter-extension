@@ -1,5 +1,3 @@
-console.log('Twitter Multi-Mute Extension loaded');
-
 (function () {
     'use strict';
 
