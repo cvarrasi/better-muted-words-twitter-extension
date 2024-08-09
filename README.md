@@ -13,6 +13,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 
 <a name="header1"/>
+
 ## How to Install in 2 Clicks
 
 > [!IMPORTANT]
@@ -22,7 +23,9 @@ TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
 <br><br>
+
 <a name="header2"/>
+
 ## Features
 
 ### 1. Add multiple muted words at once
@@ -48,6 +51,7 @@ When you see a tweet, you can now click the 3-dot menu on the right and find a n
 ![image](https://github.com/user-attachments/assets/dbd71fe3-0e76-40ce-bd63-255c07ada9f7)
 
 <br>
+
 <a name="header3"/>
   
 ## FAQs
@@ -72,6 +76,7 @@ It is currently maintained on a best-effort basis, with no guarantee of full fun
 ### The extension caused some bugs in my X.com timeline
 Please report any bugs and please note that the user should remove the extension if it's in any way hindering the right experience of X.com. The creator of the extension takes no responsibility for extension's malfunctioning.
 <br><br>
+
 <a name="header4"/>
 
 ## Updates, Suggestions, Ideas, Bugs, Typos
