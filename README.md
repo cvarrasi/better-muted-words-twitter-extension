@@ -2,6 +2,8 @@
 Manage your muted words on Twitter/X.com in a better way. Batch add multiple muted words. Generate plurals and swaps. Find presets that you might want to mute. Mute words from a tweet.
 
 ## How to Install in 2 Clicks
+> [!IMPORTANT]
+> This is only supported on Chrome browsers at the moment.
 TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
