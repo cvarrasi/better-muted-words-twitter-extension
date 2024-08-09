@@ -3,8 +3,11 @@
   "name": "Twitter Multi-Mute",
   "version": "1.0",
   "description": "Add multiple muted words to your Twitter account",
-  "permissions": ["activeTab"],
-  "host_permissions": [
+"permissions": [
+    "activeTab",
+    "storage"
+  ],
+   "host_permissions": [
       "https://api.github.com/*",
       "https://raw.githubusercontent.com/*",
       "https://twitter.com/settings/muted_keywords*"

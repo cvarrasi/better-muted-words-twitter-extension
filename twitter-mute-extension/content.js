@@ -160,12 +160,12 @@ console.log('Twitter Multi-Mute Extension loaded');
     // New function to check if we're on the muted keywords page
     function isMutedKeywordsPage() {
         const path = window.location.pathname;
-        const isCorrectPath = path.includes('/settings/muted_keywords') && 
-                              !path.match(/\/settings\/muted_keywords\/\d+/);
-        
+        const isCorrectPath = path.includes('/settings/muted_keywords') &&
+            !path.match(/\/settings\/muted_keywords\/\d+/);
+
         console.log('Current path:', path);
         console.log('Is correct path:', isCorrectPath);
-    
+
         return isCorrectPath; // Only check the path for now
     }
 
@@ -179,7 +179,7 @@ console.log('Twitter Multi-Mute Extension loaded');
                 callback(currentUrl);
             }
         });
-        
+
         function observeMain() {
             const mainContent = document.querySelector('main[role="main"]');
             if (mainContent) {
@@ -188,7 +188,7 @@ console.log('Twitter Multi-Mute Extension loaded');
                 setTimeout(observeMain, 1000); // Retry after 1 second if main content is not found
             }
         }
-        
+
         observeMain();
     }
 
@@ -209,9 +209,9 @@ console.log('Twitter Multi-Mute Extension loaded');
 
     function injectUI() {
         console.log('Attempting to inject or remove UI');
-        
+
         const existingUI = document.getElementById('twitter-multi-mute');
-    
+
         if (!isMutedKeywordsPage()) {
             console.log('Not on muted keywords page, skipping injection');
             if (existingUI) {
@@ -220,47 +220,51 @@ console.log('Twitter Multi-Mute Extension loaded');
             }
             return false;
         }
-        
+
         if (existingUI) {
             console.log('UI already injected');
             return true;
         }
-    
+
         // Wait for the section details area to load
         const targetDiv = document.querySelector("#react-root > div > div > div.css-175oi2r.r-1f2l425.r-13qz1uu.r-417010.r-18u37iz > main > div > div > div > section:nth-child(2)");
         if (!targetDiv) {
             console.error('Section details area not found');
             return false;
         }
-    
+
         console.log('Injecting UI');
         const extensionUI = document.createElement('div');
         extensionUI.id = 'twitter-multi-mute';
         extensionUI.className = 'twitter-multi-mute-container';
         extensionUI.innerHTML = `
         <div class="header-container">
-            <h3>Multi-Mute Extension</h3>
+            <h3>Better Muted Words Extension</h3>
             <button id="findConnectedWordsButton" title="Adds plurals, variants, letter swaps of the words you added. The originals will be preserved.">Add Plurals/Variants</button>
         </div>
         <div class="textarea-container">
             <textarea id="wordList" placeholder="Enter words to mute, separated by commas or new lines"></textarea>
             <button id="clearButton" class="clear-button">Clear</button>
         </div>
-        <div id="carousel" class="carousel-container">
+    <div class="carousel-container">
+        <div id="carousel" class="preset-buttons-container">
+            <input type="text" id="presetFilter" placeholder="Search...">
             <!-- Preset buttons will be added here dynamically -->
         </div>
+    </div>
+    </div>
         <div class="mute-button-container">
             <button id="muteButton" title="Adds the muted words you added to the text box above. The button shows the estimated number of seconds that the operation will take">Mute words</button>
         </div>
         <div id="statusContainer" style="display: none;"></div>
         <div id="loadingIndicator" style="display: none;">Processing... Please wait.</div>
         `;
-    
+
         // Insert the extension UI as the first child of the target div
         targetDiv.insertBefore(extensionUI, targetDiv.firstChild);
         applyThemeClasses();
         copyBorderStyle();
-    
+
         // Add event listeners and other initialization code here
         const muteButton = document.getElementById('muteButton');
         if (muteButton) {
@@ -269,7 +273,7 @@ console.log('Twitter Multi-Mute Extension loaded');
         } else {
             console.error('Mute button not found');
         }
-    
+
         const findConnectedWordsButton = document.getElementById('findConnectedWordsButton');
         if (findConnectedWordsButton) {
             findConnectedWordsButton.addEventListener('click', handleFindConnectedWords);
@@ -277,7 +281,7 @@ console.log('Twitter Multi-Mute Extension loaded');
         } else {
             console.error('Find Connected Words button not found');
         }
-    
+
         const clearButton = document.getElementById('clearButton');
         if (clearButton) {
             clearButton.addEventListener('click', () => {
@@ -293,36 +297,121 @@ console.log('Twitter Multi-Mute Extension loaded');
         } else {
             console.error('Clear button not found');
         }
-    
-        const wordList = document.getElementById('wordList');
-        if (wordList) {
-            wordList.addEventListener('input', function() {
-                adjustTextareaHeight(this);
+
+        const filterInput = document.getElementById('presetFilter');
+        if (filterInput) {
+            let lastFilteredPresets = [];
+
+            const debouncedStatusUpdate = debounce(() => {
+                console.log('Debounced status update executing');
+                if (lastFilteredPresets.length === 0) {
+                    console.log('No presets found, showing status');
+                    showStatus('Nothing found. <a href="https://twitter.com/intent/user?screen_name=carlovarrasi" target="_blank">Suggest new packs</a>', 'info');
+                } else {
+                    console.log('Presets found, clearing status');
+                    clearAllStatus();
+                }
+            }, 100); // 100ms debounce time
+
+            filterInput.addEventListener('input', () => {
+                console.log('Filter input changed');
+                const filterText = filterInput.value.toLowerCase();
+                console.log('Filter text:', filterText);
+
+                lastFilteredPresets = presetWords.filter(preset => {
+                    if (!Array.isArray(preset) || preset.length === 0) {
+                        console.error('Invalid preset format:', preset);
+                        return false;
+                    }
+                    const match = preset[0].toLowerCase().includes(filterText);
+                    console.log(`Preset "${preset[0]}" ${match ? 'matches' : 'does not match'} filter`);
+                    return match;
+                });
+
+                console.log('Filtered presets:', lastFilteredPresets);
+
+                // Immediately update buttons
+                updatePresetButtons(lastFilteredPresets);
+
+                // Debounce the status update
+                debouncedStatusUpdate();
+            });
+            console.log('Input event listener added to filter input');
+        } else {
+            console.error('Filter input not found');
+        }
+        // Check for stored prefill value
+        const storedPrefill = localStorage.getItem('twitterMultiMutePrefill');
+        if (storedPrefill) {
+            console.log('Found stored prefill value:', storedPrefill);
+            const wordList = document.getElementById('wordList');
+            if (wordList) {
+                // Remove the "[Keywords from the tweet] " prefix if it exists
+                const cleanedText = storedPrefill.replace(/^\[Keywords from the tweet\] /, '');
+                wordList.value = cleanedText;
+                adjustTextareaHeight(wordList);
                 updateMuteButtonText();
                 updateButtonStates();
-            });
-            adjustTextareaHeight(wordList);
+                console.log('Prefilled text added to word list:', cleanedText);
+                
+                // Clear the stored value after using it
+                localStorage.removeItem('twitterMultiMutePrefill');
+            }
         } else {
-            console.error('Word list textarea not found');
+            console.log('No stored prefill value found');
         }
-    
+
         updatePresetButtons();
         adjustPresetButtonWidths();
         updateMuteButtonText();
         updateButtonStates();
-    
+
         console.log('UI injected successfully');
         return true;
     }
 
-    // New function to update preset buttons
-    function updatePresetButtons() {
-        const carousel = document.getElementById('carousel');
-        if (!carousel) return;
+    function logUrlAndParameters() {
+        console.log('Current URL:', window.location.href);
+        const urlParams = new URLSearchParams(window.location.search);
+        console.log('URL parameters:');
+        for (const [key, value] of urlParams) {
+            console.log(`${key}: ${value}`);
+        }
+    }
 
-        carousel.innerHTML = presetWords.map((preset, index) =>
-            `<button class="small-preset-button" data-preset="${index}">${preset[0]}</button>`
-        ).join('');
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // New function to update preset buttons
+    function updatePresetButtons(filteredPresets) {
+        console.log('Updating preset buttons');
+        const buttonsContainer = document.getElementById('carousel');
+        if (!buttonsContainer) {
+            console.error('Buttons container not found');
+            return;
+        }
+
+        // Remove existing buttons
+        buttonsContainer.querySelectorAll('.small-preset-button').forEach(button => button.remove());
+
+        if (filteredPresets.length === 0) {
+            // If no presets, just clear the buttons
+            console.log('No presets to display');
+            return;
+        }
+
+        // Add new buttons
+        filteredPresets.forEach((preset, index) => {
+            const button = document.createElement('button');
+            button.className = 'small-preset-button';
+            button.setAttribute('data-preset', presetWords.indexOf(preset));  // Use the index in the original array
+            button.textContent = preset[0];
+            buttonsContainer.appendChild(button);
+        });
 
         // Re-add event listeners to preset buttons
         document.querySelectorAll('.small-preset-button').forEach((button) => {
@@ -346,7 +435,7 @@ console.log('Twitter Multi-Mute Extension loaded');
 
     function retryInjectUI(maxRetries = 20, initialDelay = 1000, subsequentDelay = 500) {
         let retries = 0;
-    
+
         function attemptInject() {
             console.log(`Attempt ${retries + 1} to inject UI`);
             if (isMutedKeywordsPage()) {
@@ -358,7 +447,7 @@ console.log('Twitter Multi-Mute Extension loaded');
             } else {
                 console.log('Not on muted keywords page, skipping injection');
             }
-    
+
             retries++;
             if (retries < maxRetries) {
                 console.log(`Retry ${retries} scheduled in ${retries === 1 ? initialDelay : subsequentDelay}ms`);
@@ -367,7 +456,7 @@ console.log('Twitter Multi-Mute Extension loaded');
                 console.error('Failed to inject UI after maximum retries');
             }
         }
-    
+
         attemptInject();
     }
 
@@ -380,12 +469,39 @@ console.log('Twitter Multi-Mute Extension loaded');
     }
 
     function updatePresetButtons() {
-        const carousel = document.getElementById('carousel');
-        if (!carousel) return;
+        const buttonsContainer = document.getElementById('carousel');
+        const filterInput = document.getElementById('presetFilter');
+        if (!buttonsContainer || !filterInput) {
+            console.error('Buttons container or filter input not found');
+            return;
+        }
 
-        carousel.innerHTML = presetWords.map((preset, index) =>
-            `<button class="small-preset-button" data-preset="${index}">${preset[0]}</button>`
-        ).join('');
+        const filterText = filterInput.value.toLowerCase();
+        console.log('Filter text:', filterText);
+
+        const filteredPresets = presetWords.filter(preset => {
+            if (!Array.isArray(preset) || preset.length === 0) {
+                console.error('Invalid preset format:', preset);
+                return false;
+            }
+            const match = preset[0].toLowerCase().includes(filterText);
+            console.log(`Preset "${preset[0]}" ${match ? 'matches' : 'does not match'} filter`);
+            return match;
+        });
+
+        console.log('Filtered presets:', filteredPresets);
+
+        // Remove existing buttons
+        buttonsContainer.querySelectorAll('.small-preset-button').forEach(button => button.remove());
+
+        // Add new buttons after the filter input
+        filteredPresets.forEach((preset, index) => {
+            const button = document.createElement('button');
+            button.className = 'small-preset-button';
+            button.setAttribute('data-preset', index);
+            button.textContent = preset[0];
+            buttonsContainer.appendChild(button);
+        });
 
         // Re-add event listeners to preset buttons
         document.querySelectorAll('.small-preset-button').forEach((button) => {
@@ -574,40 +690,91 @@ console.log('Twitter Multi-Mute Extension loaded');
         });
     }
 
+    let currentStatusTimer = null;
+
     function showStatus(message, type) {
+        console.log('Showing status:', message, type);
         let statusContainer = document.getElementById('statusContainer');
         if (!statusContainer) {
+            console.log('Status container not found, creating new one');
             statusContainer = document.createElement('div');
             statusContainer.id = 'statusContainer';
             const extensionUI = document.getElementById('twitter-multi-mute');
             if (extensionUI) {
                 extensionUI.appendChild(statusContainer);
+                console.log('Status container appended to extension UI');
             } else {
-                return; // If the extension UI is not found, we can't show the status
+                console.error('Extension UI not found, cannot show status');
+                return;
             }
         }
+
+        // Clear any existing status messages
+        statusContainer.innerHTML = '';
 
         statusContainer.style.display = 'block';
 
         const statusDiv = document.createElement('div');
-        statusDiv.textContent = message;
         statusDiv.className = `status ${type} visible`;
-        statusContainer.appendChild(statusDiv);
 
-        // Clear the status after 5 seconds
-        setTimeout(() => {
+        const messageSpan = document.createElement('span');
+        messageSpan.innerHTML = message;
+        statusDiv.appendChild(messageSpan);
+
+        const dismissButton = document.createElement('button');
+        dismissButton.className = 'status-dismiss';
+        const dismissX = document.createElement('span');
+        dismissX.innerHTML = '&times;';
+        dismissButton.appendChild(dismissX);
+        statusDiv.appendChild(dismissButton);
+
+        statusContainer.appendChild(statusDiv);
+        console.log('Status message added to container');
+
+        // Function to remove the status message
+        const removeStatus = () => {
             statusDiv.remove();
             if (statusContainer.children.length === 0) {
                 statusContainer.style.display = 'none';
             }
-        }, 5000);
+            console.log('Status message removed');
+            currentStatusTimer = null;
+        };
+
+        // Clear any existing timer
+        if (currentStatusTimer) {
+            clearTimeout(currentStatusTimer);
+        }
+
+        // Set up new auto-dismiss timer
+        currentStatusTimer = setTimeout(removeStatus, 10000);
+
+        // Set up manual dismiss
+        dismissButton.onclick = () => {
+            clearTimeout(currentStatusTimer);
+            removeStatus();
+        };
+    }
+
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
     }
 
     function clearAllStatus() {
+        console.log('Clearing all status messages');
         const statusContainer = document.getElementById('statusContainer');
         if (statusContainer) {
             statusContainer.innerHTML = '';
             statusContainer.style.display = 'none';
+            console.log('Status container cleared and hidden');
         }
     }
 
@@ -739,6 +906,26 @@ console.log('Twitter Multi-Mute Extension loaded');
     });
     observeTheme.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
+    function observePageLoad() {
+        const observer = new MutationObserver((mutations) => {
+            for (const mutation of mutations) {
+                if (mutation.type === 'childList') {
+                    const addedNodes = Array.from(mutation.addedNodes);
+                    for (const node of addedNodes) {
+                        if (node.nodeType === Node.ELEMENT_NODE && node.querySelector('[data-testid="primaryColumn"]')) {
+                            console.log('Primary column loaded, attempting to inject UI');
+                            observer.disconnect();
+                            retryInjectUI();
+                            return;
+                        }
+                    }
+                }
+            }
+        });
+    
+        observer.observe(document.body, { childList: true, subtree: true });
+    }
+
     // Function to start observing for menus
     function observeForMenus() {
         menuObserver.observe(document.body, { childList: true, subtree: true });
@@ -747,17 +934,31 @@ console.log('Twitter Multi-Mute Extension loaded');
     // Function to initialize the extension
     function initExtension() {
         console.log('Initializing extension');
+        logUrlAndParameters();
+    
+        chrome.storage.local.get(['twitterMultiMutePrefill'], function(result) {
+            if (result.twitterMultiMutePrefill) {
+                console.log('Prefill data found in chrome.storage:', result.twitterMultiMutePrefill);
+                localStorage.setItem('twitterMultiMutePrefill', result.twitterMultiMutePrefill);
+                
+                // Clear the data from chrome.storage
+                chrome.storage.local.remove('twitterMultiMutePrefill', function() {
+                    console.log('Prefill data cleared from chrome.storage');
+                });
+            }
+        });
+    
         observeForMenus();
         setupClickTracking();
-        observeUrlChanges(onUrlChange);  // Add this line
-
+        observeUrlChanges(onUrlChange);
+    
         // Initial injection attempt if the URL matches
         if (isMutedKeywordsPage()) {
             fetchPresets().then(() => {
                 retryInjectUI();
             });
         }
-
+    
         console.log('Extension initialized');
     }
 
@@ -868,8 +1069,14 @@ console.log('Twitter Multi-Mute Extension loaded');
     // Function to open muted words page with pre-filled text
     function openMutedWordsPage(words) {
         const prefixedText = "[Keywords from the tweet] " + words.join(', ');
-        const encodedText = encodeURIComponent(prefixedText);
-        window.open(`https://twitter.com/settings/muted_keywords#prefill=${encodedText}`, '_blank');
+        
+        // Store the prefilled text in chrome.storage
+        chrome.storage.local.set({ 'twitterMultiMutePrefill': prefixedText }, function() {
+            console.log('Prefill data saved to chrome.storage');
+            
+            // Open the muted keywords page
+            window.open('https://twitter.com/settings/muted_keywords', '_blank');
+        });
     }
 
     // Global variable to store the last clicked tweet
