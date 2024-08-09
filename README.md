@@ -70,7 +70,7 @@ No, this extension does not collect or send any data, it simply runs locally in 
 > [!IMPORTANT]
 > <b>No view point or opinion is ever expressed with this extension and the keywords  contains</b> and no part of this extension represents the views of the creator or his employers.
 
-The words found in the extension packs are simply terms that typically identify tweets about a topic. Their presence (or absence) is in no way a judgment, endorsement or rejection. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds or not.<br>
+The words found in the extension packs are simply terms that typically identify tweets about a topic. Their presence (or absence) is in no way a judgment, endorsement or rejection. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds.<br>
 
 ### Is the extension actively maintained?
 It is currently maintained on a best-effort basis, with no guarantee of full functioning and no thorough test on all edge cases/devices. Sorry!
