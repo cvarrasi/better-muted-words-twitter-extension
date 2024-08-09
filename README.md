@@ -5,7 +5,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > [!IMPORTANT]
 > This extension is only supported on Chrome browsers at the moment.
 
-<br>TODO: Add install instructions
+TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
 
