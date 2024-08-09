@@ -3,10 +3,16 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 ## How to Install in 2 Clicks
 
+Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
+
 ## Features
 
-### 1. Add multiple muted words in one go
-Todo
+### 1. Add multiple muted words at once
+
+
+![image](https://github.com/user-attachments/assets/0226437d-272b-4e8e-85f5-b35a5fc0dbff)
+
+
 
 ### 2. Generate plurals and variants for your muted words
 Todo
