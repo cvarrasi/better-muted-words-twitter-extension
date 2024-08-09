@@ -13,7 +13,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
 
 > [!NOTE]
-> This is NOT an official extension by X.com/Twitter
+> This is <b>NOT</b> an official extension by X.com/Twitter
 
 <br>
 
