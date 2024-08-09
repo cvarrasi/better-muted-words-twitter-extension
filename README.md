@@ -34,12 +34,21 @@ When you see a tweet, you can now click the 3-dot menu on the right and find a n
 ### Is this extension free?
 Yes, it's free.
 
+### Is this extension affiliated with X.com or in any way official?
+No, this is not affilited with X.com nor it's official. It's simply a personal project.
+
 ### Is any of my data collected/stored?
 No, this extension does not collect or send any data, it simply runs locally in your browser. It does not even have analytics, it literally just lives within your Chrome window.
 
 ### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
 <b>NO VIEW POINT OR OPINION IS EVER EXPRESSED AS PART OF THIS EXTENSION</b> and in no way this extension ever represents the views of the creator or his employers.
 <br><br>The words found in the extension packs are simply terms that typically identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
+
+### Is the extension maintained?
+It is currently maintained on a best-effort basis, with no guarantee of full functioning and no thorough test on all edge cases/devices. Sorry!
+
+### The extension caused some bugs in my X.com timeline
+Please report any bugs and please note that the user should remove the extension if it's in any way hindering the right experience of X.com. The creator of the extension takes no responsibility for extension's malfunctioning.
 
 ## I have suggestions, ideas, bugs, typos
 <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
