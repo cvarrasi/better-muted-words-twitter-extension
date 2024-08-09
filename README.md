@@ -38,7 +38,7 @@ Yes, it's free.
 No, this extension does not collect or send any data, it simply runs locally in your browser. It does not even have analytics, it literally just lives within your Chrome window.
 
 ### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
-<b>NO VIEW POINT OR OPINION IS EVER EXPRESSED AS PART OF THIS EXTENSION</b> and it never represents the views of the author or the company of the author.
+<b>NO VIEW POINT OR OPINION IS EVER EXPRESSED AS PART OF THIS EXTENSION</b> and no part of this extension ever represents the views of the creator or the company of the creator.
 <br><br>The words found in the extension packs are simply terms that typically identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
 ## I have suggestions, ideas, bugs, typos
