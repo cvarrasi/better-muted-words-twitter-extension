@@ -13,7 +13,6 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 
 <a name="header1"/>
-
 ## How to Install in 2 Clicks
 
 > [!IMPORTANT]
