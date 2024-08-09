@@ -40,6 +40,8 @@ When you see a tweet, you can now click the 3-dot menu on the right and find a n
 
 ![image](https://github.com/user-attachments/assets/dbd71fe3-0e76-40ce-bd63-255c07ada9f7)
 
+<br>
+
 ## FAQs
 ### Is this extension free?
 Yes, it's free.
