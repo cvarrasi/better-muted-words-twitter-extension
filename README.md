@@ -22,7 +22,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 ## How to Install the Chrome Extension
 
 > [!IMPORTANT]
-> This extension is only supported on Chrome at the moment.
+> This extension is only supported on the Chrome browser at the moment.
 
 TODO: Add install instructions
 <br><br>
