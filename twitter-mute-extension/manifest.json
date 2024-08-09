@@ -5,7 +5,8 @@
   "description": "Manage muted words on X.com/Twitter",
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "favicon"
   ],
   "host_permissions": [
     "https://api.github.com/*",
@@ -13,16 +14,7 @@
     "https://twitter.com/settings/muted_keywords*"
   ],
   "action": {
-    "default_icon": {
-      "16": "images/icon16.png",
-      "48": "images/icon48.png",
-      "128": "images/icon128.png"
-    }
-  },
-  "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "default_icon": "favicon.png"
   },
   "background": {
     "service_worker": "background.js"

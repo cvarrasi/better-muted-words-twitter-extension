@@ -54,7 +54,6 @@
             console.log('Presets loaded:', presetWords);
             updatePresetButtons(); // Add this line to update buttons after fetching
         } catch (error) {
-            console.error('Error fetching presets:', error);
             // Fallback to default presets if fetch fails
             presetWords = [];
             updatePresetButtons(); // Still update buttons even if fetch fails
