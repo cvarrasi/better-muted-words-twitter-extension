@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Twitter Multi-Mute",
+  "name": "Better Muted Words",
   "version": "1.0",
-  "description": "Add multiple muted words to your Twitter account",
+  "description": "Manage muted words on X.com/Twitter",
   "permissions": [
     "activeTab",
     "storage"
