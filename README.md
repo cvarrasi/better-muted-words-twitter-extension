@@ -40,7 +40,7 @@ No, this is not affilited with X.com nor it's official. It's simply a personal p
 ### Is any of my data collected/stored?
 No, this extension does not collect or send any data, it simply runs locally in your browser. It does not even have analytics, it literally just lives within your Chrome window.
 
-### So you suggest to mute <i>topic xyz</i>, does this mean you are in favor/against <i>topic xyz</i>?
+### You suggest to mute <i>xyz</i>, so you are in favor/against <i>xyz</i>?
 <b>NO VIEW POINT OR OPINION IS EVER EXPRESSED AS PART OF THIS EXTENSION</b> and in no way this extension ever represents the views of the creator or his employers.
 <br><br>The words found in the extension packs are simply terms that typically identify tweets about a topic. It's up to the user to choose what to mute, depending on what they might not want to see in their feeds during their relaxing social media time.<br>
 
