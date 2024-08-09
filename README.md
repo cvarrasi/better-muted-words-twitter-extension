@@ -85,3 +85,4 @@ Please report any bugs and please note that the user should remove the extension
 <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 <br>Also rate this app in the Chrome web store and share it with your friends and followers!
+<br><br><br><br>
