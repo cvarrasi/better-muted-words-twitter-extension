@@ -5,7 +5,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 > <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
-
+<br><br>
 ## How to Install in 2 Clicks
 > [!IMPORTANT]
 > This extension is only supported on Chrome at the moment.
@@ -13,7 +13,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
-
+<br><br>
 ## Features
 
 ### 1. Add multiple muted words at once
@@ -59,7 +59,7 @@ It is currently maintained on a best-effort basis, with no guarantee of full fun
 
 ### The extension caused some bugs in my X.com timeline
 Please report any bugs and please note that the user should remove the extension if it's in any way hindering the right experience of X.com. The creator of the extension takes no responsibility for extension's malfunctioning.
-<br>
+<br><br>
 ## Updates, Suggestions, Ideas, Bugs, Typos
 <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
