@@ -8,11 +8,9 @@ Once installed, you find the extension directly inside the <a href="https://x.co
 ## Features
 
 ### 1. Add multiple muted words at once
-
+The extension allows you to add mulitple words (or sets of words) that you would like to mute, separated by either commas or line breaks. Once you press the 'mute words' button, the extension will proceed to add them to your settings.<br>Don't worry about duplicates or already-existing keywords, those will be automatically skipped.
 
 ![image](https://github.com/user-attachments/assets/0226437d-272b-4e8e-85f5-b35a5fc0dbff)
-
-
 
 ### 2. Generate plurals and variants for your muted words
 Todo
