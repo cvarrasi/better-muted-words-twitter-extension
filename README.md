@@ -24,7 +24,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
-<br><br>
+<br><br><br>
 
 <a name="header2"/>
 
@@ -52,7 +52,7 @@ When you see a tweet, you can now click the 3-dot menu on the right and find a n
 
 ![image](https://github.com/user-attachments/assets/dbd71fe3-0e76-40ce-bd63-255c07ada9f7)
 
-<br>
+<br><br>
 
 <a name="header3"/>
   
