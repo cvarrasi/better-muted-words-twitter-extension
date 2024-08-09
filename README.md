@@ -12,10 +12,10 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 [Updates, Suggestions, Ideas, Bugs, Typos](#header4)<br>
 
 
-
+<a name="header1"/>
 
 ## How to Install in 2 Clicks
-<a name="header1"/>
+
 > [!IMPORTANT]
 > This extension is only supported on Chrome at the moment.
 
