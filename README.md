@@ -8,12 +8,16 @@ Once installed, you find the extension directly inside the <a href="https://x.co
 ## Features
 
 ### 1. Add multiple muted words at once
-The extension allows you to add mulitple words (or sets of words) that you would like to mute, separated by either commas or line breaks. Once you press the 'mute words' button, the extension will proceed to add them to your settings.<br>Don't worry about duplicates or already-existing keywords, those will be automatically skipped.
+The extension allows you to add mulitple words (or sets of words) that you would like to mute, separated by either commas or line breaks. Once you press the 'mute words' button, the extension will proceed to add them to your settings.
+<br><br>
+Don't worry about duplicates or already-existing keywords, those will be automatically skipped.
 
 ![image](https://github.com/user-attachments/assets/0226437d-272b-4e8e-85f5-b35a5fc0dbff)
 
 ### 2. Generate plurals and variants for your muted words
-Todo
+The button in the top right corner 'Add Plurals/Variants' allows you to generate the plurals/variants of the words you have in your textbox, adding them to the list of words to mute.<br><br>This is useful to remove all variations and letter swaps that might be used in posts.
+
+![image](https://github.com/user-attachments/assets/59e69f43-03b5-43d9-8faa-908a291d8e05)
 
 ### 3. Quick-add preset packs of muted words 
 Todo
