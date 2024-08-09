@@ -77,7 +77,7 @@ It is currently maintained on a best-effort basis, with no guarantee of full fun
 
 ### The extension caused some bugs in my X.com timeline
 Please report any bugs and please note that the user should remove the extension if it's in any way hindering the right experience of X.com. The creator of the extension takes no responsibility for extension's malfunctioning.
-<br><br>
+<br><br><br>
 
 <a name="header4"/>
 
