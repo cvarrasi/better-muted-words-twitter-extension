@@ -12,6 +12,9 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
 
+> [!NOTE]
+> This is NOT an official extension by X.com/Twitter
+
 <br>
 
 <a name="header1"/>
