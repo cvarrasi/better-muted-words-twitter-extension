@@ -361,6 +361,14 @@ console.log('Twitter Multi-Mute Extension loaded');
             console.log('No stored prefill value found');
         }
 
+        const wordList = document.getElementById('wordList');
+        if (wordList) {
+            wordList.addEventListener('input', () => {
+                updateMuteButtonText();
+                updateButtonStates();
+            });
+        }
+
         updatePresetButtons();
         adjustPresetButtonWidths();
         updateMuteButtonText();
