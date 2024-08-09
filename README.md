@@ -7,13 +7,13 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 [Updates, Suggestions, Ideas, Bugs, Typos](#header4)<br>
 <br>
 
+> [!NOTE]
+> This is <b>NOT</b> an official extension by X.com/Twitter
+
 > [!TIP]
 > <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 > <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
-
-> [!NOTE]
-> This is <b>NOT</b> an official extension by X.com/Twitter
 
 <br>
 
