@@ -8,11 +8,6 @@
     "storage",
     "favicon"
   ],
-  "host_permissions": [
-    "https://api.github.com/*",
-    "https://raw.githubusercontent.com/*",
-    "https://twitter.com/settings/muted_keywords*"
-  ],
   "action": {
     "default_icon": "favicon.png"
   },
