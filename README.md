@@ -1,7 +1,6 @@
 # Better Muted Words - Chrome Extension for Twitter/X.com
 Manage your muted words on Twitter/X.com in a better way. Batch add multiple muted words. Generate plurals and swaps. Find presets that you might want to mute. Mute words from a tweet.
 
-<b>Table of Contents:</b>
 <br>[How to Install in 2 Clicks](#header1)<br> 
 [Features](#header2)<br>
 [FAQs](#header3)<br>
