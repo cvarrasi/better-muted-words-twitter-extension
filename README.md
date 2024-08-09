@@ -6,11 +6,14 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 > <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
 > <br>Also rate this app in the Chrome web store and share it with your friends and followers!
 
-## Table of Contents  
-[How to Install in 2 Clicks](#headers)  
-[Emphasis](#emphasis) 
+[How to Install in 2 Clicks](#header1)  
+[Features](#header2)
+[FAQs](#header3)
+[Updates, Suggestions, Ideas, Bugs, Typos](#header2)
 
-<a name="headers"/> ## How to Install in 2 Clicks
+
+<a name="header1"/>
+## How to Install in 2 Clicks
 > [!IMPORTANT]
 > This extension is only supported on Chrome at the moment.
 
@@ -18,6 +21,7 @@ TODO: Add install instructions
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
 <br><br>
+<a name="header2"/>
 ## Features
 
 ### 1. Add multiple muted words at once
@@ -43,7 +47,8 @@ When you see a tweet, you can now click the 3-dot menu on the right and find a n
 ![image](https://github.com/user-attachments/assets/dbd71fe3-0e76-40ce-bd63-255c07ada9f7)
 
 <br>
-
+<a name="header3"/>
+  
 ## FAQs
 ### Is this extension free?
 Yes, it's free.
@@ -66,6 +71,8 @@ It is currently maintained on a best-effort basis, with no guarantee of full fun
 ### The extension caused some bugs in my X.com timeline
 Please report any bugs and please note that the user should remove the extension if it's in any way hindering the right experience of X.com. The creator of the extension takes no responsibility for extension's malfunctioning.
 <br><br>
+<a name="header4"/>
+
 ## Updates, Suggestions, Ideas, Bugs, Typos
 <b><a href="https://twitter.com/intent/user?screen_name=carlovarrasi">Follow me</a></b> for updates and new features.
 <br>Send me suggestions for new packs/features or bugs you found via tweet/DM!
