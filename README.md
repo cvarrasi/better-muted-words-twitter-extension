@@ -10,7 +10,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 [How to Install in 2 Clicks](#headers)  
 [Emphasis](#emphasis) 
 
-## How to Install in 2 Clicks
+<a name="headers"/> ## How to Install in 2 Clicks
 > [!IMPORTANT]
 > This extension is only supported on Chrome at the moment.
 
