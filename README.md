@@ -8,7 +8,7 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 ## How to Install in 2 Clicks
 > [!IMPORTANT]
-> This extension is only supported on Chrome browsers at the moment.
+> This extension is only supported on Chrome at the moment.
 
 TODO: Add install instructions
 <br><br>
