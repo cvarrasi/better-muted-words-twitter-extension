@@ -1,17 +1,37 @@
 .twitter-multi-mute-container {
-    background-color: #15202b;
-    border: 1px solid #38444d;
+    background-color: var(--background-primary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: none;
+    border-right: none;
+    /*background-color: #15202b;
+    border: 1px solid #38444d;*/
     border-radius: 0;
     padding: 16px;
-    margin: 0; /* This will remove any margin */
+    margin: 0;  
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     width: 100%;
     box-sizing: border-box;
     display: block !important;
     opacity: 1 !important;
     visibility: visible !important;
+    --border-color-light: #11738b;
+    --border-color-dark: #2f3336;
+    --border-color-dim: #38444d;
 }
 
+/* Theme-specific styles */
+.light-theme {
+    --border-color: rgb(239, 243, 244);
+}
+
+.dim-theme {
+    --border-color: rgb(56, 68, 77);
+}
+
+.dark-theme {
+    --border-color: rgb(47, 51, 54);
+}
 /* If the above doesn't work, you can try to force it with !important */
 .twitter-multi-mute-container {
     margin: 0 !important;
@@ -43,7 +63,7 @@ div[data-testid="primaryColumn"] > div > div:last-child {
 }
 
 #twitter-multi-mute h3 {
-    color: #ffffff;
+    color: var(--title-color, var(--title-color-light));
     font-size: 18px;
     font-weight: bold;
     margin: 0;
@@ -58,10 +78,8 @@ div[data-testid="primaryColumn"] > div > div:last-child {
     width: 100%;
     min-height: 80px; /* Changed from height to min-height */
     max-height: 300px; /* Add a maximum height to prevent excessive growth */
-    background-color: #253341;
-    border: 1px solid #38444d;
-    border-radius: 4px;
-    color: #ffffff;
+    background-color: var(--background-primary);
+    border: 2px solid var(--border-color);
     padding: 8px;
     padding-right: 48px;
     font-size: 14px;
@@ -73,8 +91,8 @@ div[data-testid="primaryColumn"] > div > div:last-child {
 
 .clear-button {
     position: absolute;
-    bottom: 6px;
-    right: 6px;
+    bottom: 12px;
+    right: 12px;
     background-color: #e0245e; /* Darker red background */
     color: #ffffff; /* White text */
     border: none;
@@ -103,9 +121,9 @@ div[data-testid="primaryColumn"] > div > div:last-child {
 }
 
 .small-preset-button {
-    background-color: #4a4f57; /* Darker background color */
-    color: #ffffff;
-    border: none;
+    background-color: var(--preset-button, var(--preset-button-light));
+    color: var(--preset-text, var(--preset-text-light));
+    border: 2px solid var(--border-color);
     border-radius: 9999px;
     padding: 6px 12px;
     font-weight: bold;
@@ -117,11 +135,11 @@ div[data-testid="primaryColumn"] > div > div:last-child {
     flex: 0 0 auto;
     min-height: 32px;
     line-height: 1.2;
-    transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.2s ease;
 }
 
 .small-preset-button:hover {
-    background-color: #5a5f68; /* Slightly lighter on hover for better feedback */
+    background-color: var(--preset-button-hover, rgba(15, 20, 25, 0.1));
 }
 
 #twitter-multi-mute #findConnectedWordsButton {

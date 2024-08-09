@@ -1,18 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "Twitter Multi-Mute",
-    "version": "1.0",
-    "description": "Add multiple muted words to your Twitter account",
-    "permissions": ["activeTab"],
-    "host_permissions": ["https://api.github.com/*", "https://raw.githubusercontent.com/*"],
-    "content_scripts": [
-        {
-          "matches": [
-            "https://twitter.com/*",
-            "https://x.com/*"
-          ],
-          "js": ["content.js"],
-          "css": ["styles.css"]
-        }
-    ]
+  "manifest_version": 3,
+  "name": "Twitter Multi-Mute",
+  "version": "1.0",
+  "description": "Add multiple muted words to your Twitter account",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+      "https://api.github.com/*",
+      "https://raw.githubusercontent.com/*",
+      "https://twitter.com/settings/muted_keywords*"
+  ],
+  "content_scripts": [
+      {
+        "matches": [
+          "https://twitter.com/*",
+          "https://x.com/*"
+        ],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+  ]
 }
