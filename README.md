@@ -14,7 +14,7 @@ The extension allows you to add mulitple words (or sets of words) that you would
 Don't worry about duplicates or already-existing keywords, those will be automatically skipped.
 
 ![image](https://github.com/user-attachments/assets/10c8573b-3fcb-4576-a347-02418737f0d2)
-
+___
 ### 2. Generate plurals and variants for your muted words
 The button in the top right corner 'Add Plurals/Variants' allows you to generate the plurals/variants of the words you have in your textbox, adding them to the list of words to mute.<br><br>This is useful to remove all variations and letter swaps that might be used in posts.
 
