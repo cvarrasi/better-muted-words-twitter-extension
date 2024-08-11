@@ -21,10 +21,12 @@ Manage your muted words on Twitter/X.com in a better way. Batch add multiple mut
 
 ## How to Install the Chrome Extension
 
-> [!IMPORTANT]
-> This extension is only supported on the Chrome browser at the moment.
+Visit the <a href="https://chromewebstore.google.com/detail/better-muted-words/kogfodpcilmconphbpldnipakepicaia">Chrome Web store</a> to install the extension to your browser.
+<br>This extension is only supported on the Chrome browser at the moment.
 
-TODO: Add install instructions
+> [!IMPORTANT]
+> As I am a new developer, Chrome will tell you that the extension is not trusted. This will go away in few months <a href="https://support.google.com/chrome_webstore/answer/2664769?hl=en#zippy=%2Cinstall-with-enhanced-safe-browsing">apparently</a>
+
 <br><br>
 Once installed, you find the extension directly inside the <a href="https://x.com/settings/muted_keywords">'Muted words' settings page</a> and you can start using it right away.
 <br><br><br>
